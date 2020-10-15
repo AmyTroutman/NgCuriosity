@@ -28,7 +28,7 @@ Expanded view will display Image, Review
 - [ x ] Make model
 - [ x ] Make controller
 - [ x ] Migrate
-- [ ] Test
-- [ ] Add link in nav-menu
+- [ x ] Test in Postman
 - [ ] Table component
-- [ ] 
+- [ ] Add link in nav-menu
+- [ ] Add CaffeineLvl to model?
