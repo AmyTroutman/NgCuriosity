@@ -18,3 +18,8 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
     eventAdd:
     eventChange:
     eventRemove:
+
+## Second Project: Expandable MatTable
+A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
+Default view will display Brand, Name, Type, Subtype, Rating
+Expanded view will display Image, Review
