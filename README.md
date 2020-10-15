@@ -21,5 +21,14 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
 
 ## Second Project: Expandable MatTable
 A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
-Default view will display Brand, Name, Type, Subtype, Rating
+Default view will display Brand, Name, Type, Subtype, Mood
 Expanded view will display Image, Review
+
+- [ x ] ng add Material
+- [ x ] Make model
+- [ x ] Make controller
+- [ x ] Migrate
+- [ ] Test
+- [ ] Add link in nav-menu
+- [ ] Table component
+- [ ] 
