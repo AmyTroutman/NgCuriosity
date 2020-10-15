@@ -10,7 +10,6 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
 - [x] Import FullCalendar Module 
 - [x] import plugins 
 - [x] register plugins
-- [ ] Read up on CalendarAPI
 - [ ] Setup backend 
 
 ### Notes
@@ -24,11 +23,11 @@ A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
 Default view will display Brand, Name, Type, Subtype, Mood
 Expanded view will display Image, Review
 
-- [ x ] ng add Material
-- [ x ] Make model
-- [ x ] Make controller
-- [ x ] Migrate
-- [ x ] Test in Postman
+- [x] ng add Material
+- [x] Make model
+- [x] Make controller
+- [x] Migrate
+- [x] Test in Postman
 - [ ] Table component
 - [ ] Add link in nav-menu
 - [ ] Add CaffeineLvl to model?
