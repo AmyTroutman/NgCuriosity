@@ -10,11 +10,14 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
 - [x] Import FullCalendar Module 
 - [x] import plugins 
 - [x] register plugins
-- [ ] Read up on CalendarAPI
-- [ ] Setup backend 
+- [x] Setup backend 
+- [ ] Migrate
+- [ ] Seed data
+- [ ] Test API
 
 ### Notes
   You can update a remote database when these fire:
     eventAdd:
     eventChange:
     eventRemove:
+  Made some models and controllers. Haven't tested yet.
