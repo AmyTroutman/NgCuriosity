@@ -38,4 +38,5 @@ Expanded view will display Image, Review
 - [ ] Table component
 - [ ] Add link in nav-menu
 - [ ] Add CaffeineLvl to model?
+- [ ] And a Mat Slider for caffeineLvl!
 

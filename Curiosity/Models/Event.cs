@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace Curiosity.Models
 {
@@ -16,6 +17,7 @@ namespace Curiosity.Models
         public DateTime Start {get;set;}
         public DateTime End {get;set;}
         public int MemberId {get;set;}
+        [JsonIgnore]
         public Member Member {get;set;}
     }
 }

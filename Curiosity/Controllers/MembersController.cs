@@ -27,16 +27,14 @@ namespace capstone.Controllers
         public IEnumerable<Member> Get()
         {
             var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
-            return _context.Members.Include(b =>b.Events).ToArray();
-           // return _context.Members.Include(b =>b.Events).Where(b => b.UserId == userId).ToArray();
+            return _context.Members.Include(b =>b.Events).Where(b => b.UserId == userId).ToArray();
         }
 
         [HttpGet("{id}")]
         public Member Get([FromRoute] int id)
         {
             var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var member = _context.Members.Include(b =>b.Events).FirstOrDefault(b => b.Id == id);
-            //var member = _context.Members.Include(b =>b.Events).Where(b => b.UserId == userId).FirstOrDefault(b => b.Id == id);
+            var member = _context.Members.Include(b =>b.Events).Where(b => b.UserId == userId).FirstOrDefault(b => b.Id == id);
             if(member == null) return null;
             return member;
         }
