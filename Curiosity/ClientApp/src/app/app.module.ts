@@ -18,6 +18,7 @@ import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.
 import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { CalendarComponent } from './calendar/calendar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -45,7 +46,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'calendar', component: CalendarComponent },
       { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
-    ])
+    ]),
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }
