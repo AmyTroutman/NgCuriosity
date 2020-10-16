@@ -12,8 +12,9 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
 - [x] register plugins
 - [x] Setup backend 
 - [x] Migrate
-- [x] Test API
-- [ ] Make event service
+- [x] Test API in Postman
+- [ ] Make Event API service
+- [ ] Make Event service
 
 ### Notes
   You can update a remote database when these fire:
@@ -35,9 +36,11 @@ Expanded view will display Image, Review
 - [x] Make model
 - [x] Make controller
 - [x] Migrate
-- [x] Test in Postman
-- [ ] Table component
-- [ ] Add link in nav-menu
+- [x] Test API in Postman
+- [ ] Make HotBev service
+= [ ] Make HotBev API service
+- [ x ] DrinKeep component
+- [ x ] Add link in nav-menu
 - [ ] Add CaffeineLvl to model?
 - [ ] And a Mat Slider for caffeineLvl!
 
