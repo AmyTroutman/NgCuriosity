@@ -13,7 +13,7 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
 - [x] Setup backend 
 - [x] Migrate
 - [x] Test API
-- [] Make event service
+- [ ] Make event service
 
 ### Notes
   You can update a remote database when these fire:
