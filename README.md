@@ -38,7 +38,7 @@ Expanded view will display Image, Review
 - [x] Migrate
 - [x] Test API in Postman
 - [ ] Make HotBev service
-= [ ] Make HotBev API service
+- [ ] Make HotBev API service
 - [ x ] DrinKeep component
 - [ x ] Add link in nav-menu
 - [ ] Add CaffeineLvl to model?
