@@ -12,7 +12,8 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
 - [x] register plugins
 - [x] Setup backend 
 - [x] Migrate
-- [ ] Test API
+- [x] Test API
+- [] Make event service
 
 ### Notes
   You can update a remote database when these fire:
@@ -23,7 +24,7 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
   Made some models and controllers. Haven't tested yet.
 
 ### Issues
-  - Angry about getting members and events
+  - ~~Angry about getting members and events~~
 
 ## Second Project: Expandable MatTable
 A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
