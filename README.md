@@ -11,8 +11,7 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
 - [x] import plugins 
 - [x] register plugins
 - [x] Setup backend 
-- [ ] Migrate
-- [ ] Seed data
+- [x] Migrate
 - [ ] Test API
 
 ### Notes
@@ -22,6 +21,9 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
     eventRemove:
 
   Made some models and controllers. Haven't tested yet.
+
+### Issues
+  - Angry about getting members and events
 
 ## Second Project: Expandable MatTable
 A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.

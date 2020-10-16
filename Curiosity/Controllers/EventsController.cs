@@ -27,14 +27,16 @@ namespace capstone.Controllers
         public IEnumerable<Event> Get()
         {
             var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
-            return _context.Events.Include(b =>b.Member).Where(b => b.Member.UserId == userId).ToArray();
+            return _context.Events.Include(b =>b.Member).ToArray();
+           // return _context.Events.Include(b =>b.Member).Where(b => b.Member.UserId == userId).ToArray();
         }
 
         [HttpGet("{id}")]
         public Event Get([FromRoute] int id)
         {
             var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var plan = _context.Events.Include(b =>b.Member).Where(b => b.Member.UserId == userId).FirstOrDefault(b => b.Id == id);
+            var plan = _context.Events.Include(b =>b.Member).FirstOrDefault(b => b.Id == id);
+            //var plan = _context.Events.Include(b =>b.Member).Where(b => b.Member.UserId == userId).FirstOrDefault(b => b.Id == id);
             if(plan == null) return null;
             return plan;
         }
@@ -42,9 +44,9 @@ namespace capstone.Controllers
         [HttpPost]
         public Event Post([FromBody] Event plan)
         {
-            var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            // var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            plan.Member.UserId = userId;
+            // plan.Member.UserId = userId;
             _context.Events.Add(plan);
             _context.SaveChanges();
             return plan;
