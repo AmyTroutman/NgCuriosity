@@ -30,8 +30,8 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
 
 ## Second Project: Expandable MatTable
 A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
-Default view will display Brand, Name, Type, Subtype, Mood
-Expanded view will display Image, Review
+- Default view will display Brand, Name, Type, Subtype, Mood
+- Expanded view will display Image, Review
 [Expandable MatTable](https://v9.material.angular.io/components/table/examples)
 
 - [x] ng add Material
