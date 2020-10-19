@@ -13,6 +13,7 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
 - [x] Setup backend 
 - [x] Migrate
 - [x] Test API in Postman
+- [ ] Make an interface!!
 - [ ] Make Event API service
 - [ ] Make Event service
 
@@ -29,16 +30,18 @@ Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a
 
 ## Second Project: Expandable MatTable
 A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
-Default view will display Brand, Name, Type, Subtype, Mood
-Expanded view will display Image, Review
+- Default view will display Brand, Name, Type, Subtype, Mood
+- Expanded view will display Image, Review
+[Expandable MatTable](https://v9.material.angular.io/components/table/examples)
 
 - [x] ng add Material
 - [x] Make model
 - [x] Make controller
 - [x] Migrate
 - [x] Test API in Postman
-- [ ] Make HotBev service
-- [ ] Make HotBev API service
+- [x] Make an interface!
+- [x] Make HotBev service
+- [ ] Make HotBev API service (wtf was I talking about here?)
 - [x] DrinKeep component
 - [x] Add link in nav-menu
 - [ ] Add CaffeineLvl to model?

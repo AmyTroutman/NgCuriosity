@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
+import { MatSort } from '@angular/material/sort';
+import { IHotBev } from '../interfaces/ihot-bev';
+import { HotBevService } from '../services/hot-bev.service';
 
 @Component({
   selector: 'app-hot-bev',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotBevComponent implements OnInit {
 
-  constructor() { }
+  hotBevs: IHotBev[];
+  dataSource: MatTableDataSource<IHotBev>;
+  displayedColumns: string[] = [
+    'name', 'brand', 'type', 'subtype', 'mood'
+  ];
+  @ViewChild(MatSort, {static: true})sort: MatSort;
 
-  ngOnInit(): void {
+  constructor(private bevService: HotBevService) { }
+
+  async ngOnInit() {
+    this.hotBevs = await this.bevService.getBevs();
+    this.dataSource = new MatTableDataSource<IHotBev>(this.hotBevs);
+    this.dataSource.sort = this.sort;
   }
 
 }
