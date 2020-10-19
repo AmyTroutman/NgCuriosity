@@ -40,12 +40,6 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     HomeComponent,
     CalendarComponent,
     HotBevComponent,
-    MatExpansionModule,
-    MatInputModule,
-    MatPaginatorModule,
-    MatSliderModule,
-    MatSortModule,
-    MatTableModule
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -58,7 +52,13 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
       { path: 'calendar', component: CalendarComponent },
       { path: 'drinkeep', component: HotBevComponent }
     ]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatExpansionModule,
+    MatInputModule,
+    MatPaginatorModule,
+    MatSliderModule,
+    MatSortModule,
+    MatTableModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }
