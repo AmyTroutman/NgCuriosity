@@ -46,4 +46,6 @@ A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
 - [x] Add link in nav-menu
 - [ ] Add CaffeineLvl to model?
 - [ ] And a Mat Slider for caffeineLvl!
+- [x] Expandable MatTable
+
 

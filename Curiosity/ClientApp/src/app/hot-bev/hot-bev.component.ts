@@ -3,26 +3,35 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 import { IHotBev } from '../interfaces/ihot-bev';
 import { HotBevService } from '../services/hot-bev.service';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-hot-bev',
   templateUrl: './hot-bev.component.html',
-  styleUrls: ['./hot-bev.component.css']
+  styleUrls: ['./hot-bev.component.css'],
+  animations: [
+    trigger('detailExpand', [
+      state('collapsed', style({ height: '0px', minHeight: '0' })),
+      state('expanded', style({ height: '*' })),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
+    ]),
+  ],
 })
 export class HotBevComponent implements OnInit {
 
   hotBevs: IHotBev[];
-  dataSource: MatTableDataSource<IHotBev>;
+  dataSource;
   displayedColumns: string[] = [
-    'name', 'brand', 'type', 'subtype', 'mood'
+    'name', 'brand', 'type'
   ];
-  @ViewChild(MatSort, {static: true})sort: MatSort;
+  expandedElement: IHotBev | null;
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
 
   constructor(private bevService: HotBevService) { }
 
   async ngOnInit() {
     this.hotBevs = await this.bevService.getBevs();
-    this.dataSource = new MatTableDataSource<IHotBev>(this.hotBevs);
+    this.dataSource = this.hotBevs;
     this.dataSource.sort = this.sort;
   }
 
