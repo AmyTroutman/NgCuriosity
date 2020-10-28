@@ -1,6 +1,9 @@
 # NgCuriosity
 Just a project for trying new Angular things.
 
+### Styling
+Trying to do something different. I like the b&w bg-img with transparent colored tiles all over, but I want to do try to get away from that. At the moment (Oct 28, 2020), I'm still doing the stained glass thing. It just happened. 
+
 ## First Project: FullCalendar
 Using [FullCalendar](https://fullcalendar.io/docs/angular) to mess around with a planner-type thing. 
 
@@ -51,4 +54,6 @@ A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
 - [ ] Btn to remove a bev
 - [ ] Way to edit bev
 
+## Image Credits
+[Carlos Quintero](https://unsplash.com/@c_quintero) - [“Falling Through Infinity”](https://unsplash.com/photos/7mINv5udhe8)
 

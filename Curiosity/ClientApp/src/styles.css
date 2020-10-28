@@ -1,19 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
-
-code {
-  color: #e01a76;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+body {
+  background-image: url('./assets/bwFlower.jpg');
+  background-size: cover;
 }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mod {
+  width: fit-content;
+  background-color: rgba(221, 88, 88, 0.63);
+  border: 2px solid rgb(221, 88, 88);
+  padding: 1%;
+}
+
+a {
+  color: aqua;
+}
