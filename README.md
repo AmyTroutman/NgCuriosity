@@ -47,5 +47,8 @@ A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
 - [ ] Add CaffeineLvl to model?
 - [ ] And a Mat Slider for caffeineLvl!
 - [x] Expandable MatTable
+- [ ] NewBev component
+- [ ] Btn to remove a bev
+- [ ] Way to edit bev
 
 
