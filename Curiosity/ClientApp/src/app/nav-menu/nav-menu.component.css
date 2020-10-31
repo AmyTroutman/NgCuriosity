@@ -18,6 +18,8 @@ html {
 }
 
 .navbar {
-  background-color: teal;
-  border-bottom: 1px solid rgb(0, 71, 71);
+  background-color: rgba(221, 88, 88, 0.705);
+  border-bottom: 1px solid rgb(221, 88, 88);
+  color: aquamarine;
 }
+

@@ -1,5 +1,16 @@
 table {
   width: 100%;
+  background: rgb(221, 88, 88);
+  background: linear-gradient(169deg, rgba(221, 88, 88, 0.63) 19%, rgb(182, 3, 62) 57%, rgb(218, 59, 59) 97%);
+}
+
+th {
+  color: #280957;
+}
+
+td {
+  font-weight: bold; 
+  color: #280957;
 }
 
 tr.example-detail-row {
@@ -25,10 +36,10 @@ tr.example-element-row:not(.example-expanded-row):active {
 
 .example-element-diagram {
   min-width: 80px;
-  border: 2px solid black;
+  border: 2px solid #280957;
   padding: 8px;
   font-weight: lighter;
-  margin: .5% 2%;
+  margin: .5% 2% .5% .5%;
   height: 104px;
 }
 
@@ -38,6 +49,17 @@ tr.example-element-row:not(.example-expanded-row):active {
   line-height: normal;
 }
 
-.example-element-description {
+.example-element-review {
   padding: 16px;
+  color: #f8f9fa;
+  font-weight: initial;
+  font-size: 16px;
+}
+
+.example-element-mood {
+  color: #ffffff;
+}
+
+tr:hover {
+  background-color: rgba(221, 88, 88, 0.288);
 }

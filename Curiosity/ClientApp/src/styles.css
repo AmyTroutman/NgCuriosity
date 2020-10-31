@@ -2,8 +2,10 @@
 
 /* Provide sufficient contrast against white background */
 body {
-  background-image: url('./assets/bwFlower.jpg');
-  background-size: cover;
+  /* background-image: url('./assets/bwFlower.jpg');
+  background-size: cover; */
+  background: rgb(40,9,87);
+  background: linear-gradient(169deg, rgba(40,9,87,1) 19%, rgba(13,4,34,1) 57%, rgba(59,192,218,1) 97%);
 }
 
 html, body { height: 100%; }
@@ -11,11 +13,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mod {
   width: fit-content;
-  background-color: rgba(221, 88, 88, 0.63);
+  background-color: rgba(221, 88, 88, 0.705);
   border: 2px solid rgb(221, 88, 88);
+  box-shadow: 0 .25rem .75rem rgba(221, 88, 88, 0.63);
+  color: #f8f9fa;
   padding: 1%;
-}
-
-a {
-  color: aqua;
 }
