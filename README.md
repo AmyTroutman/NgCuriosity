@@ -49,10 +49,13 @@ A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
 - [x] Add link in nav-menu
 - [ ] Add CaffeineLvl to model?
 - [ ] And a Mat Slider for caffeineLvl!
+- [ ] Add ImageUrl property
 - [x] Expandable MatTable
 - [ ] NewBev component
+- [ ] Use chips as selectors for type and subtype
 - [ ] Btn to remove a bev
 - [ ] Way to edit bev
+
 
 ## Image Credits
 [Carlos Quintero](https://unsplash.com/@c_quintero) - [“Falling Through Infinity”](https://unsplash.com/photos/7mINv5udhe8)
