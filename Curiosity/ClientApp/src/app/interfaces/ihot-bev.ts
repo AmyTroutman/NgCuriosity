@@ -6,5 +6,7 @@ export interface IHotBev {
     subtype: string;
     review: string;
     mood: string;
+    caffeine: number;
+    image?: string;
     userId?: string;
 }

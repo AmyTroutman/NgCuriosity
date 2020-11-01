@@ -63,3 +63,11 @@ tr.example-element-row:not(.example-expanded-row):active {
 tr:hover {
   background-color: rgba(221, 88, 88, 0.288);
 }
+
+.btn-cool {
+  border: solid 2px #280957;
+  margin: 2%;
+  margin-top: 5%;
+  color: white;
+  background-color: rgb(59,192,218);
+}

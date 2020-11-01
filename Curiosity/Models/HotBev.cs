@@ -19,6 +19,8 @@ namespace Curiosity.Models
         public string Subtype {get;set;}
         public string Review {get;set;}
         public string Mood {get;set;}
+        public string ImageUrl { get; set; }
+        public int Caffeine { get; set; }
         public string UserId {get;set;}
         public ApplicationUser User {get;set;}
     }

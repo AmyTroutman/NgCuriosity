@@ -56,7 +56,21 @@ A catalog for all the hot bevs I have consumed. Coffee, tea, cocoa, etc.
 - [ ] Btn to remove a bev
 - [ ] Way to edit bev
 
+### Notes
+Caffeine amounts (6oz cup)
+Black tea: 50mg
+Oolong tea: 30-40mg
+Green tea: 20-30mg
+White tea: 15-20mg
+Decaf black tea: 2mg
+
+
+Brewed coffee: 80-135mg
+Drip coffee: 115-175mg
+Decaf: 2mg
+*Caffeine levels vary depending on roast, grind, bean type, and brewing method. French press extracts more caffeine from a dark roast. Percolator and espresso extract more from a light roast. Robusta has more caffeine than arabica. 
 
 ## Image Credits
 [Carlos Quintero](https://unsplash.com/@c_quintero) - [“Falling Through Infinity”](https://unsplash.com/photos/7mINv5udhe8)
+[Benjah-bmm27](https://commons.wikimedia.org/wiki/User:Benjah-bmm27) - ["Skeletal formula for caffeine"](https://commons.wikimedia.org/w/index.php?curid=1878332)  - Own work, Public Domain
 
