@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatTableDataSource } from '@angular/material/table';
+import { MatTable, MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 import { IHotBev } from '../interfaces/ihot-bev';
 import { HotBevService } from '../services/hot-bev.service';
@@ -26,6 +26,7 @@ export class HotBevComponent implements OnInit {
   ];
   expandedElement: IHotBev | null;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
+  @ViewChild(MatTable) table: MatTable<any>;
 
   constructor(private bevService: HotBevService) { }
 
@@ -35,4 +36,11 @@ export class HotBevComponent implements OnInit {
     this.dataSource.sort = this.sort;
   }
 
+  async delete(id: number) {
+    this.bevService.deleteBev(id);
+    this.hotBevs = await this.bevService.getBevs();
+    this.dataSource = new MatTableDataSource(this.hotBevs);
+    // this almost works, but only when you click delete a second time
+    this.table.renderRows();
+  }
 }
