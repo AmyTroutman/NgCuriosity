@@ -70,6 +70,9 @@ Drip coffee: 115-175mg
 Decaf: 2mg
 *Caffeine levels vary depending on roast, grind, bean type, and brewing method. French press extracts more caffeine from a dark roast. Percolator and espresso extract more from a light roast. Robusta has more caffeine than arabica. 
 
+### Issues
+MatTable not updating properly when an item is deleted(see [stackoverflow](https://stackoverflow.com/questions/49284358/calling-renderrows-on-angular-material-table))
+
 ## Image Credits
 [Carlos Quintero](https://unsplash.com/@c_quintero) - [“Falling Through Infinity”](https://unsplash.com/photos/7mINv5udhe8)
 [Benjah-bmm27](https://commons.wikimedia.org/wiki/User:Benjah-bmm27) - ["Skeletal formula for caffeine"](https://commons.wikimedia.org/w/index.php?curid=1878332)  - Own work, Public Domain
